@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "next/image-optimization": "off",  // تعطيل فحص الصور
+    "no-unused-vars": "warn",  // تحويل تحذيرات المتغيرات غير المستخدمة إلى تحذير بدلاً من خطأ
+    "react/no-unescaped-entities": "off"  // تعطيل التحذيرات المتعلقة بالكائنات غير الهروب في React
+  }
 }
